@@ -6,8 +6,10 @@ class FileIcon extends StatelessWidget {
   final String fileName;
   final double size;
 
-  FileIcon(String fileName, {required this.size})
-      : this.fileName = fileName.toLowerCase();
+  FileIcon(
+    String fileName, {
+    this.size = 60,
+  }) : this.fileName = fileName.toLowerCase();
 
   @override
   Widget build(BuildContext context) {
